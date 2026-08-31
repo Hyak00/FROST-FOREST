@@ -1,7 +1,21 @@
-// Movimento simples com setas / WASD
-var _vel = 4;
-
-if (keyboard_check(vk_left) || keyboard_check(ord("A"))) x -= _vel;
-if (keyboard_check(vk_right) || keyboard_check(ord("D"))) x += _vel;
-if (keyboard_check(vk_up) || keyboard_check(ord("W"))) y -= _vel;
-if (keyboard_check(vk_down) || keyboard_check(ord("S"))) y += _vel;
+var move_x = 0;
+var move_y = 0;
+if (keyboard_check(ord("D"))) {
+    move_x += 1;
+}
+if (keyboard_check(ord("A"))) {
+    move_x -= 1;
+}
+if (keyboard_check(ord("S"))) {
+    move_y += 1;
+}
+if (keyboard_check(ord("W"))) {
+    move_y -= 1;
+}
+if (move_x != 0 || move_y != 0) {
+    var move_length = point_distance(0, 0, move_x, move_y);
+    move_x /= move_length;
+    move_y /= move_length;
+}
+x += move_x * move_speed;
+y += move_y * move_speed;
