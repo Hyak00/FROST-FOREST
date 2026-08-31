@@ -19,3 +19,4 @@ if (move_x != 0 || move_y != 0) {
 }
 x += move_x * move_speed;
 y += move_y * move_speed;
+
