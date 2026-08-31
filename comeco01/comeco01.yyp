@@ -19,6 +19,7 @@
   },
   "name":"comeco01",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_dialogo_ui_1","path":"objects/obj_dialogo_ui_1/obj_dialogo_ui_1.yy",},},
     {"id":{"name":"obj_dialogo_ui","path":"objects/obj_dialogo_ui/obj_dialogo_ui.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
